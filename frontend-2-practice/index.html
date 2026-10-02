@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUNA — Выбор даты и времени</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="#">LUNA</a>
+      <span class="header-note">Онлайн-запись</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <a class="back-link" href="#">← Вернуться</a>
+      <p class="step-label">Шаг 3 из 4</p>
+      <h1 class="page-title">Выбор даты и времени</h1>
+      <p class="page-subtitle">Выберите удобный день и свободное время для визита.</p>
+    </section>
+
+    <div class="content-grid">
+      <section class="date-card" aria-labelledby="date-title">
+        <div class="card-heading">
+          <div>
+            <p class="card-kicker">Дата визита</p>
+            <h2 class="card-title" id="date-title">Октябрь 2026</h2>
+          </div>
+          <div class="month-buttons">
+            <button class="round-button" type="button" aria-label="Предыдущий месяц">←</button>
+            <button class="round-button" type="button" aria-label="Следующий месяц">→</button>
+          </div>
+        </div>
+
+        <div class="weekday-row" aria-hidden="true">
+          <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+        </div>
+
+        <div class="date-grid">
+          <button class="date date--outside" type="button">28</button>
+          <button class="date date--outside" type="button">29</button>
+          <button class="date date--outside" type="button">30</button>
+          <button class="date" type="button">1</button>
+          <button class="date" type="button">2</button>
+          <button class="date date--selected" type="button" aria-pressed="true">3</button>
+          <button class="date" type="button">4</button>
+          <button class="date" type="button">5</button>
+          <button class="date" type="button">6</button>
+          <button class="date" type="button">7</button>
+          <button class="date" type="button">8</button>
+          <button class="date" type="button">9</button>
+          <button class="date" type="button">10</button>
+          <button class="date" type="button">11</button>
+          <button class="date" type="button">12</button>
+          <button class="date" type="button">13</button>
+          <button class="date" type="button">14</button>
+          <button class="date" type="button">15</button>
+          <button class="date" type="button">16</button>
+          <button class="date" type="button">17</button>
+          <button class="date" type="button">18</button>
+          <button class="date" type="button">19</button>
+          <button class="date" type="button">20</button>
+          <button class="date" type="button">21</button>
+          <button class="date" type="button">22</button>
+          <button class="date" type="button">23</button>
+          <button class="date" type="button">24</button>
+          <button class="date" type="button">25</button>
+          <button class="date" type="button">26</button>
+          <button class="date" type="button">27</button>
+          <button class="date" type="button">28</button>
+          <button class="date" type="button">29</button>
+          <button class="date" type="button">30</button>
+          <button class="date" type="button">31</button>
+          <button class="date date--outside" type="button">1</button>
+        </div>
+      </section>
+
+      <section class="time-card" aria-labelledby="time-title">
+        <p class="card-kicker">Время визита</p>
+        <h2 class="card-title" id="time-title">3 октября</h2>
+        <p class="time-note">Суббота · доступно 6 вариантов</p>
+
+        <div class="time-list">
+          <button class="time-button" type="button">10:00</button>
+          <button class="time-button time-button--busy" type="button" disabled>11:30 · занято</button>
+          <button class="time-button" type="button">12:30</button>
+          <button class="time-button time-button--selected" type="button" aria-pressed="true">14:00</button>
+          <button class="time-button" type="button">15:30</button>
+          <button class="time-button time-button--busy" type="button" disabled>17:00 · занято</button>
+          <button class="time-button" type="button">18:30</button>
+          <button class="time-button" type="button">20:00</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="bottom-panel">
+      <div class="booking-info">
+        <div>
+          <span class="info-label">Услуга</span>
+          <strong>Стрижка и укладка</strong>
+        </div>
+        <div>
+          <span class="info-label">Специалист</span>
+          <strong>Анна</strong>
+        </div>
+        <div>
+          <span class="info-label">Выбрано</span>
+          <strong>3 октября · 14:00</strong>
+        </div>
+      </div>
+      <button class="primary-button" type="button">Продолжить</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 LUNA</p>
+    <a href="#">Контакты</a>
+  </footer>
+</body>
+</html>
