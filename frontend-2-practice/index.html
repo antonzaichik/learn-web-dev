@@ -3,121 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUNA — Выбор даты и времени</title>
+  <title>BRUT — Выбор даты и времени</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-content">
-      <a class="brand" href="#">LUNA</a>
-      <span class="header-note">Онлайн-запись</span>
+    <div class="header-inner">
+      <a class="logo" href="#" aria-label="BRUT — на главную">BRUT</a>
+      <nav class="steps" aria-label="Этапы записи">
+        <span class="step step--done">1. Услуга</span>
+        <span class="step step--done">2. Мастер</span>
+        <span class="step step--active">3. Дата и время</span>
+        <span class="step">4. Подтверждение</span>
+      </nav>
     </div>
   </header>
 
-  <main class="page">
-    <section class="intro">
-      <a class="back-link" href="#">← Вернуться</a>
-      <p class="step-label">Шаг 3 из 4</p>
-      <h1 class="page-title">Выбор даты и времени</h1>
-      <p class="page-subtitle">Выберите удобный день и свободное время для визита.</p>
-    </section>
+  <main class="booking">
+    <section class="booking-main">
+      <a class="back-link" href="#">← Назад</a>
+      <h1 class="page-title">Выберите дату и время</h1>
+      <p class="page-subtitle">Стрижка · 60 минут</p>
 
-    <div class="content-grid">
-      <section class="date-card" aria-labelledby="date-title">
-        <div class="card-heading">
-          <div>
-            <p class="card-kicker">Дата визита</p>
-            <h2 class="card-title" id="date-title">Октябрь 2026</h2>
-          </div>
-          <div class="month-buttons">
-            <button class="round-button" type="button" aria-label="Предыдущий месяц">←</button>
-            <button class="round-button" type="button" aria-label="Следующий месяц">→</button>
-          </div>
+      <section class="calendar-card" aria-labelledby="calendar-title">
+        <div class="calendar-head">
+          <button class="icon-button" type="button" aria-label="Предыдущий месяц">‹</button>
+          <h2 class="calendar-title" id="calendar-title">Октябрь 2026</h2>
+          <button class="icon-button" type="button" aria-label="Следующий месяц">›</button>
         </div>
 
-        <div class="weekday-row" aria-hidden="true">
+        <div class="weekdays" aria-hidden="true">
           <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
         </div>
 
-        <div class="date-grid">
-          <button class="date date--outside" type="button">28</button>
-          <button class="date date--outside" type="button">29</button>
-          <button class="date date--outside" type="button">30</button>
-          <button class="date" type="button">1</button>
-          <button class="date" type="button">2</button>
-          <button class="date date--selected" type="button" aria-pressed="true">3</button>
-          <button class="date" type="button">4</button>
-          <button class="date" type="button">5</button>
-          <button class="date" type="button">6</button>
-          <button class="date" type="button">7</button>
-          <button class="date" type="button">8</button>
-          <button class="date" type="button">9</button>
-          <button class="date" type="button">10</button>
-          <button class="date" type="button">11</button>
-          <button class="date" type="button">12</button>
-          <button class="date" type="button">13</button>
-          <button class="date" type="button">14</button>
-          <button class="date" type="button">15</button>
-          <button class="date" type="button">16</button>
-          <button class="date" type="button">17</button>
-          <button class="date" type="button">18</button>
-          <button class="date" type="button">19</button>
-          <button class="date" type="button">20</button>
-          <button class="date" type="button">21</button>
-          <button class="date" type="button">22</button>
-          <button class="date" type="button">23</button>
-          <button class="date" type="button">24</button>
-          <button class="date" type="button">25</button>
-          <button class="date" type="button">26</button>
-          <button class="date" type="button">27</button>
-          <button class="date" type="button">28</button>
-          <button class="date" type="button">29</button>
-          <button class="date" type="button">30</button>
-          <button class="date" type="button">31</button>
-          <button class="date date--outside" type="button">1</button>
+        <div class="calendar-grid">
+          <button class="day day--muted" type="button">28</button>
+          <button class="day day--muted" type="button">29</button>
+          <button class="day day--muted" type="button">30</button>
+          <button class="day" type="button">1</button>
+          <button class="day" type="button">2</button>
+          <button class="day day--active" type="button" aria-pressed="true">3</button>
+          <button class="day" type="button">4</button>
+          <button class="day" type="button">5</button>
+          <button class="day" type="button">6</button>
+          <button class="day" type="button">7</button>
+          <button class="day" type="button">8</button>
+          <button class="day" type="button">9</button>
+          <button class="day" type="button">10</button>
+          <button class="day" type="button">11</button>
+          <button class="day" type="button">12</button>
+          <button class="day" type="button">13</button>
+          <button class="day" type="button">14</button>
+          <button class="day" type="button">15</button>
+          <button class="day" type="button">16</button>
+          <button class="day" type="button">17</button>
+          <button class="day" type="button">18</button>
+          <button class="day" type="button">19</button>
+          <button class="day" type="button">20</button>
+          <button class="day" type="button">21</button>
+          <button class="day" type="button">22</button>
+          <button class="day" type="button">23</button>
+          <button class="day" type="button">24</button>
+          <button class="day" type="button">25</button>
+          <button class="day" type="button">26</button>
+          <button class="day" type="button">27</button>
+          <button class="day" type="button">28</button>
+          <button class="day" type="button">29</button>
+          <button class="day" type="button">30</button>
+          <button class="day" type="button">31</button>
+          <button class="day day--muted" type="button">1</button>
         </div>
       </section>
 
-      <section class="time-card" aria-labelledby="time-title">
-        <p class="card-kicker">Время визита</p>
-        <h2 class="card-title" id="time-title">3 октября</h2>
-        <p class="time-note">Суббота · доступно 6 вариантов</p>
+      <section class="time-section" aria-labelledby="time-title">
+        <div class="time-heading">
+          <h2 class="section-title" id="time-title">Свободное время</h2>
+          <span class="selected-date">3 октября, суббота</span>
+        </div>
 
-        <div class="time-list">
-          <button class="time-button" type="button">10:00</button>
-          <button class="time-button time-button--busy" type="button" disabled>11:30 · занято</button>
-          <button class="time-button" type="button">12:30</button>
-          <button class="time-button time-button--selected" type="button" aria-pressed="true">14:00</button>
-          <button class="time-button" type="button">15:30</button>
-          <button class="time-button time-button--busy" type="button" disabled>17:00 · занято</button>
-          <button class="time-button" type="button">18:30</button>
-          <button class="time-button" type="button">20:00</button>
+        <div class="time-grid">
+          <button class="time-slot" type="button">10:00</button>
+          <button class="time-slot time-slot--busy" type="button" disabled>11:00</button>
+          <button class="time-slot" type="button">12:00</button>
+          <button class="time-slot time-slot--active" type="button" aria-pressed="true">13:30</button>
+          <button class="time-slot" type="button">15:00</button>
+          <button class="time-slot time-slot--busy" type="button" disabled>16:30</button>
+          <button class="time-slot" type="button">18:00</button>
+          <button class="time-slot" type="button">19:30</button>
+        </div>
+
+        <div class="legend">
+          <span class="legend-item"><span class="legend-dot legend-dot--free"></span>Свободно</span>
+          <span class="legend-item"><span class="legend-dot legend-dot--busy"></span>Занято</span>
         </div>
       </section>
-    </div>
-
-    <section class="bottom-panel">
-      <div class="booking-info">
-        <div>
-          <span class="info-label">Услуга</span>
-          <strong>Стрижка и укладка</strong>
-        </div>
-        <div>
-          <span class="info-label">Специалист</span>
-          <strong>Анна</strong>
-        </div>
-        <div>
-          <span class="info-label">Выбрано</span>
-          <strong>3 октября · 14:00</strong>
-        </div>
-      </div>
-      <button class="primary-button" type="button">Продолжить</button>
     </section>
+
+    <aside class="summary-card">
+      <h2 class="summary-title">Ваша запись</h2>
+      <div class="summary-row"><span>Услуга</span><strong>Мужская стрижка</strong></div>
+      <div class="summary-row"><span>Мастер</span><strong>Алексей</strong></div>
+      <div class="summary-row"><span>Дата</span><strong>3 октября</strong></div>
+      <div class="summary-row"><span>Время</span><strong>13:30</strong></div>
+      <div class="summary-row summary-row--total"><span>Стоимость</span><strong>2 000 ₽</strong></div>
+      <button class="continue-button" type="button">Продолжить</button>
+    </aside>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 LUNA</p>
-    <a href="#">Контакты</a>
+    <p>BRUT Barbershop · Онлайн-запись</p>
   </footer>
 </body>
 </html>
